@@ -1,0 +1,78 @@
+/* Header.jsx */
+.header{
+    font-size: large;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    padding: 30px;
+}
+
+.header h3{
+    flex: 1 ;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header ul li{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* add-blog.jsx */
+.wrapper{
+    padding: 2%;
+    /* background-color: green; */
+    width: 50%;
+    margin-left: 3%;
+    border-radius: 5px;
+    height: auto;
+    border: 2px solid black;
+    align-items: center;
+}
+
+.formwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width:47%;
+    
+    /* box-shadow: 0px 0px 10px rgb(0, 0, 0,0.6) ;      */
+}
+
+.input{
+    /* border: none; */
+    border-radius: 5px;
+    width: 95%;
+}
+
+.textarea{
+    border-radius: 5px;
+    /* border: rgb(44, 128, 255); */
+    height: 250px;
+    width: 95%;
+
+}
+
+.button{
+    width: 70%;  
+}
+
+.bloglist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: 3%;
+}
+
+.bloglist div{
+    padding: 3%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
