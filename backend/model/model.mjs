@@ -16,7 +16,7 @@ const Hello = new Schema({
         default:Date.now
     }
 })
-
+ 
 // converting the schema to a working model 
 const Model = mongoose.model('Model',Hello) ;
 

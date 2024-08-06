@@ -5,7 +5,17 @@ import Model from "../model/model.mjs";
 //FUNTIONS OF THE CONTROLLER
 
 // Fetch list of blogs
-// will work withe the GET HTTP method
+// will work with the the GET HTTP method
+// fetching a list of items
+//create a variable which is an asyn funtion with request and response
+//create a variable that will represent the array of info to be gotten
+//apply try catch
+// The variable that was created will be equated to the importedmodel .find() and the await funtion
+// catch will console.log the error
+// if is done to check if there is no bloglist and displays a message in that case
+// if there is a bloglist then it will be sent under.json({}) --The curly braces are for the array
+
+
 const fetchblogslist = async(req,res)=>{
     let Blogist ; 
 
@@ -23,6 +33,18 @@ const fetchblogslist = async(req,res)=>{
 
 //create or add a new blog 
 // Will work with the POST method 
+//create a variable which is an asyn funtion with request and response
+// create the variables to represent fields
+// Tie the fields to the req.body if provided by the use
+// date is done with the new Date()
+// Figure out how you do it with the Types.objetcID
+
+// create a variable to hold the fields of the collections
+
+
+// apply try catch to save the data
+// try is an await , the variable containing the fields and .save()
+
 const addnewblog = async(req,res)=>{
     const {title , description } = req.body ; 
     const currentdate = new Date() ; 

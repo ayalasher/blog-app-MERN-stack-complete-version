@@ -22,7 +22,7 @@ import { updateblog} from '../controller/blog-controller.mjs'
 const blogrouter = express.Router() ;
 
 
-// creating routes and the variable functions
+// creating routes and the variable functions together with HTTP methods
 blogrouter.get('/',fetchblogslist)
 blogrouter.post('/add',addnewblog) ; 
 blogrouter.delete('/delete/:id',deleteblog)
